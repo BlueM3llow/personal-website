@@ -1,0 +1,25 @@
+:root {
+  --baseCol: ;
+  --accentCol: #f54695;
+  --textCol: rgb(188, 150, 231);
+  --bgCol: #35275a;
+
+  --col1: #00033d;
+  --col2: #0600ab;
+  --col3: #0033ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--textCol);
+  font-size: 1.1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: lowercase;
+  padding: 1rem;
+  background-color: var(--bgCol);
+}
