@@ -1,0 +1,55 @@
+:root {
+  --baseCol: var(--col2);
+  --accentCol: #f54695;
+  --textCol: var(--col4);
+  --bgCol: var(--col1);
+
+  /* Palette */
+  --col1: #311259;
+  --col2: #a061f2;
+  --col3: #c599ff;
+  --col4: #e2ccff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Pixel;
+  src: url(/css/fonts/PixelEmulator.otf);
+}
+
+.inactive {
+  opacity: 30%;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* WIP Page Indicator */
+.WIPindicator {
+  position: fixed;
+  width: 120px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  animation: WIPpulse 0.6s infinite alternate ease-in-out;
+}
+
+@keyframes WIPpulse {
+  from {
+    opacity: 90%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .WIPindicator {
+    width: 80px;
+  }
+}
