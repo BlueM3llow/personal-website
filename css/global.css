@@ -18,6 +18,77 @@
   scroll-behavior: smooth;
 }
 
+h1 {
+  background-color: var(--accentCol);
+  color: var(--col1);
+  padding: 6px;
+  margin: 0 0 12px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1,
+.navCat {
+  text-transform: capitalize;
+  font-family: Pixel;
+}
+
+p {
+  margin: 12px 0 12px 0;
+  font-size: 1rem;
+}
+
+i {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: var(--textCol);
+}
+
+p a {
+  color: var(--accentCol);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--accentCol);
+  background: color-mix(in srgb, var(--accentCol) 20%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accentCol) 40%, transparent);
+  animation: flash-animation 0.8s infinite alternate;
+}
+
+.navCat {
+  background-color: var(--accentCol);
+  color: var(--col1);
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 5px 0 5px 0;
+}
+
+.sidenav a {
+  display: block;
+  color: inherit;
+  text-align: center;
+  align-content: center;
+  height: 1.8em;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sidenav img {
+  justify-content: center;
+  align-items: center;
+}
+
+.levibutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @font-face {
   font-family: Pixel;
   src: url(/css/fonts/PixelEmulator.otf);
@@ -51,5 +122,57 @@
 @media all and (max-width: 700px) {
   .WIPindicator {
     width: 80px;
+  }
+}
+
+/* Mobile Pop-up Menu */
+.mobilenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: color-mix(in srgb, var(--col1) 60%, transparent);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10001;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--textCol);
+    cursor: pointer;
+  }
+
+  .mobilenav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobilenav.active {
+    display: flex;
+  }
+
+  .sidenav {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 701px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobilenav {
+    display: none;
   }
 }

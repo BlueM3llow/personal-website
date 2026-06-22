@@ -7,37 +7,6 @@ body {
   background-image: url(/img/melm.png);
 }
 
-h1 {
-  background-color: var(--accentCol);
-  color: var(--col1);
-  padding: 6px;
-  margin: 0 0 12px 0;
-  font-size: 2rem;
-  text-align: center;
-}
-
-h1,
-.navCat {
-  text-transform: capitalize;
-  font-family: Pixel;
-}
-
-p {
-  margin: 12px 0 12px 0;
-  font-size: 1rem;
-}
-
-i {
-  opacity: 0.8;
-  color: grey;
-}
-
-a {
-  text-decoration: none;
-  border: 1px solid transparent;
-  color: var(--accentCol);
-}
-
 .main-img {
   margin: 0 12px 12px 0;
   border-radius: 12px;
@@ -95,33 +64,6 @@ code {
   padding: 0 6px 0 6px;
 }
 
-.navCat {
-  /* background-image: linear-gradient(to right, transparent, var(--col2), transparent); */
-  background-color: var(--accentCol);
-  color: var(--col1);
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin: 5px 0 5px 0;
-}
-
-#sidenav a {
-  display: block;
-  color: inherit;
-  text-align: center;
-  align-content: center;
-  height: 1.8em;
-  border: 1px solid transparent;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-a:hover {
-  color: var(--accentCol);
-  background: color-mix(in srgb, var(--accentCol) 20%, transparent);
-  border: 1px solid color-mix(in srgb, var(--accentCol) 40%, transparent);
-  animation: flash-animation 0.8s infinite alternate;
-}
-
 .update-date {
   background-color: var(--accentCol);
   color: var(--col1);
@@ -151,6 +93,7 @@ a:hover {
   }
   .main-page {
     display: flex;
+    justify-content: center;
   }
   .main {
     width: 400px;
