@@ -1,7 +1,6 @@
 body {
   color: var(--textCol);
   font-size: 1.2rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 1rem;
   overflow: hidden;
   background-image: url(/img/melm.png);
@@ -74,19 +73,13 @@ code {
   margin: 0 12px 0 0;
 }
 
-@keyframes flash-animation {
-  0% {
-    border-color: rgba(0, 0, 0, 0);
-  }
-  100% {
-    border-color: var(--accentCol);
-  }
-}
-
 /* Media Queries cuz that's required to make shit responsive for some fucking reason */
 @media (max-width: 720px) {
   h1 {
-    font-size: clamp(16px, 20px, 24px);
+    font-size: clamp(16px, 18px, 24px);
+  }
+  body {
+    padding: 0;
   }
   .main-page img {
     display: none;

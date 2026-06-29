@@ -1,8 +1,0 @@
-{
-  "chat.disableAIFeatures": false,
-  "github.copilot.chat.anthropic.tools.websearch.enabled": false,
-  "github.copilot.chat.claudeAgent.allowAutoPermissions": false,
-  "chat.checkpoints.showFileChanges": false,
-  "chat.agent.sandbox.retryWithAllowNetworkRequests": false,
-  "github.copilot.chat.agent.autoFix": false
-}
